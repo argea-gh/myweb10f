@@ -819,6 +819,7 @@ body {
   line-height: 1.6;
 }
 
+/* Ganti ini ....
 .modal-footer {
   padding: 0 24px 24px;
   display: flex;
@@ -829,8 +830,10 @@ body {
 .modal-footer .btn {
   width: 100%;
 }
+*/
 
 /* TABLET & UP: Grid layout */
+/*
 @media (min-width: 768px) {
   .modal-content {
     margin: 40px auto;
@@ -861,6 +864,44 @@ body {
 
   .modal-footer .btn {
     width: auto;
+  }
+}
+*/
+/* sampe sini */
+
+/* ────────────────────────────────────────── */
+/* MODAL FOOTER BUTTONS — RATA TENGAH */
+/* ────────────────────────────────────────── */
+
+.modal-body .btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.modal-body .btn-group .btn {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 1rem;
+}
+
+/* Tablet & Up: dua tombol sejajar */
+@media (min-width: 768px) {
+  .modal-body .btn-group {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+  .modal-body .btn-group .btn {
+    width: auto;
+    max-width: none;
+    display: inline-block;
   }
 }
 
