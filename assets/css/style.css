@@ -873,6 +873,10 @@ body {
 /* MODAL FOOTER BUTTONS — RATA TENGAH */
 /* ────────────────────────────────────────── */
 
+.modal-footer {
+  margin: auto;
+}
+
 .modal-body .btn-group {
   display: flex;
   flex-direction: column;
