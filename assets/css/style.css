@@ -773,7 +773,7 @@ body {
 }
 
 .modal-body {
-  padding: 24px 24px 40px;
+  padding: 24px 24px 20px;
 }
 
 /* MOBILE-FIRST: Stack layout di mobile */
@@ -873,10 +873,6 @@ body {
 /* MODAL FOOTER BUTTONS — RATA TENGAH */
 /* ────────────────────────────────────────── */
 
-.modal-footer {
-  margin: auto;
-}
-
 .modal-body .btn-group {
   display: flex;
   flex-direction: column;
@@ -894,6 +890,35 @@ body {
   padding: 14px 20px;
   font-size: 1rem;
 }
+/* ------------------------------- */
+/* Tombol Tutup bawah rata tengah */
+.modal-footer {
+  padding: 0 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.modal-footer .btn {
+  width: 100%;
+  max-width: 280px;
+}
+
+/* Tablet & Up: tombol "Tutup" tetap di bawah, rata tengah */
+@media (min-width: 768px) {
+  .modal-footer {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+  .modal-footer .btn-secondary {
+    width: auto;
+    padding: 10px 24px;
+  }
+}
+/* End - Tombol Tutup bawah rata tengah */
+/* ------------------------------- */
 
 /* Tablet & Up: dua tombol sejajar */
 @media (min-width: 768px) {
